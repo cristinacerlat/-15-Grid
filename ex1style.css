@@ -1,0 +1,52 @@
+body {
+    font-size: 35px;
+    background-color: darkslategrey;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    width: 1080px;
+    margin: auto;
+    justify-content: center;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-rows: 100px;
+    gap: 20px;
+  }
+  .grid div {
+    background-color: cadetblue;
+    padding: 10px 20px;
+    border: 2px solid #426e70;
+    color: white;
+    font-size: 28px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .one, .two {
+    opacity: 0.5;
+}
+.one {
+    grid-row: 1/4;
+    grid-column: 1/6;
+}
+.two {
+    grid-row: 2/6;
+    grid-column: 3/9;
+}
+.three {
+  grid-row: 1/2;
+    grid-column: 6/8;
+}
+.five {
+  grid-row: 4/5;
+    grid-column: 1/3;
+}
+.six {
+  grid-row: 5/6;
+    grid-column: 1/3;
+}
+.seven {
+  grid-row: 6/7;
+    grid-column: 1/3;
+}
